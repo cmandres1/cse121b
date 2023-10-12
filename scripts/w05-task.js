@@ -11,7 +11,6 @@ function displayTemples (templeList) {
     let newImage = document.createElement("img");
     newImage.setAttribute("src", element.imageUrl);
     newImage.setAttribute("alt", element.location );
-    newImage.setAttribute("style", "max-width:400px;");
     let article = document.createElement("article");
     article.append(templeName, newImage);
     templesElement.appendChild(article);
