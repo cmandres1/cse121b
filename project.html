@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex App</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Pokémon...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pokemon-list">
+            <h2>Pokémon List</h2>
+            <ul id="pokemonList">
+                <!-- Pokémon list will be displayed here -->
+            </ul>
+            <div class="pagination-buttons">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </section>
+
+        <section class="pokemon-details">
+            <h2>Pokémon Details</h2>
+            <div id="pokemonCards" class="pokemon-cards">
+                <!-- Pokémon cards will be displayed here -->
+            </div>
+            <div id="pokemonDetails">
+                <!-- Detailed Pokémon information will be displayed here -->
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pokédex App</p>
+    </footer>
+
+    <script src="scripts/fetchPokeAPI.js" type="module"></script>
+    <script src="scripts/app.js" type="module"></script>
+</body>
+</html>
